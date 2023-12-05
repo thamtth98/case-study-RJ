@@ -1,0 +1,248 @@
+/* TITLE */
+.header {
+  display: flex;
+  color: #000;
+}
+
+.header:before,
+.header:after {
+  content: "";
+  margin: auto 1em;
+  border-bottom: solid 2px;
+  flex: 1;
+}
+
+.title {
+  position: relative;
+  padding: 0.25em 1em;
+  overflow: hidden;
+  background: linear-gradient(#000, #000) no-repeat top center,
+    linear-gradient(#000, #000) no-repeat bottom center;
+  background-size: calc(100% - 1.7em) 2px;
+}
+
+.title:before,
+.title:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: solid 2px;
+  border-top: none;
+  border-bottom: none;
+  transform: skew(45deg);
+}
+
+.title:after {
+  transform: skew(-45deg);
+}
+
+/* SLIDE */
+.img-slide img {
+  /* border-radius: 12px; */
+  height: 650px;
+  width: 100%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  .img-slide img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .img-slide img {
+    height: 480px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  .img-slide img {
+    height: 880px;
+    width: 100%;
+  }
+}
+
+.name-product {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.BreadCrumb {
+  /* margin-left: 50px; */
+  padding: 4px 0 8px 0;
+}
+
+.BreadCrumb:hover {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+/* BTN-LOGIN */
+.btn-login {
+  background: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  color: #fff;
+  border-radius: 28px;
+  animation: button-animation 1.1s ease-in-out infinite;
+}
+@keyframes button-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-login:hover {
+  color: rgb(29, 202, 144);
+}
+
+.text-nav:hover {
+  /* opacity:0.5 */
+  color: #ff680a;
+  /* color: #f0f0f0 */
+}
+
+.text-form {
+  color: #479e56;
+}
+
+.text-form:hover {
+  color: blue;
+}
+
+.product-card {
+  transition: 0.7s;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.06);
+}
+
+.img-card,
+.hover-related,
+.hover-slide {
+  transition: 0.8s;
+}
+
+.img-card:hover {
+  transform: scale(1.14);
+}
+
+.hover-related:hover,
+.hover-slide:hover {
+  transform: scale(0.9);
+}
+
+.modal-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 24px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  .modal-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 24px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    overflow: scroll;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .modal-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 24px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+}
+
+/* Modal Detail */
+.modal-detail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 24px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  .modal-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 24px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .modal-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 24px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+}
