@@ -204,7 +204,7 @@ function ModalOrder({ openModalOrderProp, closeModalOrderProp, totalProp, listOr
                                                 >
                                                     <MenuItem value="VN">Việt Nam</MenuItem>
                                                     <MenuItem value="USA">USA</MenuItem>
-                                                    <MenuItem value="JAPAN">Japanese</MenuItem>
+                                                    <MenuItem value="JAPAN">Nhật Bản</MenuItem>
                                                 </Select>
                                             </FormControl>
                                         </Grid>

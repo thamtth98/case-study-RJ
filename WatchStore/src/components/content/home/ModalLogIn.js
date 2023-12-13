@@ -8,21 +8,6 @@ import Modal from '@mui/material/Modal';
 
 function ModalLogIn({ openModalLogIn, handleCloseModal, loginGoogle }) {
 
-    //STYLE:
-    // const style = {
-    //     position: 'absolute',
-    //     top: '50%',
-    //     left: '50%',
-    //     transform: 'translate(-50%, -50%)',
-    //     width: 500,
-    //     bgcolor: '#dee6e9',
-    //     border: '3px solid #fff',
-    //     boxShadow: 24,
-    //     pt: 1,
-    //     pr: 3,
-    //     pl: 3,
-    //     pb: 3,
-    // }
 
 
     return (

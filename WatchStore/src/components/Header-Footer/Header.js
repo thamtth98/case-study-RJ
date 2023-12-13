@@ -186,7 +186,7 @@ function Header() {
                     <Tooltip title="Trang chủ">
                       <Button>
                         <HomeIcon sx={{ fontSize: 30, color: "black" }} />
-                        <Typography className="mt-1" variant="body2" style={{ color: "black" }}>HOME</Typography>
+                        <Typography className="mt-1" variant="body2" style={{ color: "black" }}>Trang chủ</Typography>
                       </Button>
                     </Tooltip>
                   </NavLink>
@@ -197,7 +197,7 @@ function Header() {
                     <Tooltip title="Trang sản phẩm">
                       <Button>
                         <FormatListBulletedIcon sx={{ fontSize: 30, color: "black" }} />
-                        <Typography className="mt-1" variant="body2" style={{ color: "black" }}>LIST</Typography>
+                        <Typography className="mt-1" variant="body2" style={{ color: "black" }}>Sản phẩm</Typography>
                       </Button>
                     </Tooltip>
                   </NavLink>
@@ -289,19 +289,16 @@ function Header() {
                       <Typography variant="body1">{user.displayName}</Typography>
                     </MenuItem>
                     <MenuItem onClick={handleCloseUserMenu}>
-                      <Typography variant="body1" onClick={logoutGoogle} color="primary"><b><LogoutIcon /> Logout</b></Typography>
+                      <Typography variant="body1" onClick={logoutGoogle} color="primary"><b><LogoutIcon /> Đăng xuất</b></Typography>
                     </MenuItem>
                   </Menu>
                 </Box>
                 :
                 <Box sx={{ flexGrow: 0, mr: 5 }}>
                   <Button variant="contained" className="btn-login" onClick={logIn} style={{ cursor: "pointer" }}>
-                    <LoginIcon /> Login
+                    <LoginIcon /> Đăng nhập
                   </Button>
 
-                  {/* <Link href="/login" style={{ cursor: "pointer", color: "black", textDecoration: "none" }}>
-                    <b className="text-login"><LoginIcon /> Login</b>
-                  </Link> */}
                 </Box>
             }
 

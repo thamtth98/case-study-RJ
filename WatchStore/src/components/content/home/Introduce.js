@@ -24,7 +24,7 @@ function Introduce() {
           </Typography>
           <Grid item lg={12} mt={5}>
             <div className="btn-introduce">
-              <a href="/products">Learn more</a>
+              <a href="/products">Xem thêm</a>
             </div>
           </Grid>
         </Grid>

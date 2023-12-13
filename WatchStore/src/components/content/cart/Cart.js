@@ -233,8 +233,8 @@ function Cart() {
                                                 <b>Đặt hàng</b>
                                             </Button>
                                             :
-                                            <Button variant="contained" color="warning" onClick={btnOpenOrder}>
-                                                <LoginIcon /> &ensp; <b>LogIn</b>
+                                            <Button variant="contained" color="error" onClick={btnOpenOrder}>
+                                                <LoginIcon /> &ensp; <b>Đăng nhập</b>
                                             </Button>
                                         }
                                     </TableCell>

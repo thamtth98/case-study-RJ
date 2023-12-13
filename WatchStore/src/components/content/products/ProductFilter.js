@@ -69,11 +69,11 @@ function ProductFilter() {
             <Grid container p={1} mt={1}>
                 <Grid item xs={12} lg={2} md={2} sm={3}>
                     <Grid item xs={12}>
-                        <Typography variant="body1"><b>Price</b></Typography>
+                        <Typography variant="body1"><b>Giá sản phẩm:</b></Typography>
                     </Grid>
                     <Grid container mt={1}>
                         <Grid item xs={5}>
-                            <TextField size="small" value={minPrice} label="to" onChange={onChangeMinPrice}></TextField>
+                            <TextField size="small" value={minPrice} label="từ" onChange={onChangeMinPrice}></TextField>
                         </Grid>
 
                         <Grid item xs={2}>
@@ -81,22 +81,22 @@ function ProductFilter() {
                         </Grid>
 
                         <Grid item xs={5}>
-                            <TextField size="small" value={maxPrice} label="from" onChange={onChangeMaxPrice}></TextField>
+                            <TextField size="small" value={maxPrice} label="đến" onChange={onChangeMaxPrice}></TextField>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={2}></Grid>
+                <Grid item xs={1}></Grid>
                 <Grid item xs={12} lg={6} md={6} sm={6}>
                     <Grid item xs={12}>
-                        <Typography variant="body1"><b>Brand</b></Typography>
+                        <Typography variant="body1"><b>Loại sản phẩm: </b></Typography>
                     </Grid>
 
                     <Grid container mt={1} justifyContent="center">
                         <FormControl>
                             <RadioGroup aria-labelledby="demo-radio-buttons-group-label" defaultValue="female" name="radio-buttons-group">
                                 <Grid container>
-                                    <Grid item xs={6} lg={4} md={4} sm={4}>
-                                        <FormControlLabel value="" control={<Radio onChange={onChangeProductTypes} />} label="ALL" />
+                                    <Grid item xs={12} lg={4} md={4} sm={4}>
+                                        <FormControlLabel value="" control={<Radio onChange={onChangeProductTypes} />} label="Tất cả" />
                                     </Grid>
                                     {
                                         types.map((types, index) => {
@@ -118,7 +118,7 @@ function ProductFilter() {
                         <Typography variant="body1"><b>Tên sản phẩm</b></Typography>
                     </Grid>
                     <Grid item xs={12} mt={1}>
-                        <TextField label="Product Name" value={nameProduct} size="small" onChange={onChangeName}></TextField>
+                        <TextField label="Tên sản phẩm" value={nameProduct} size="small" onChange={onChangeName}></TextField>
                     </Grid>
                 </Grid>
             </Grid>

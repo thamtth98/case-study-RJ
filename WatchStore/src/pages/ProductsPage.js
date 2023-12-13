@@ -24,7 +24,7 @@ function ProductsPage() {
       <Header />
       <BreadCrumb breadCrumbs={breadCrumbs} />
 
-      {/* Fillter  */}
+      {/* Filter  */}
       <ProductFilter />
 
       <Container className="mb-5">
@@ -32,7 +32,7 @@ function ProductsPage() {
           <Grid item xs={12} mt={8} mb={1} p={2} align="center">
             <div className="header">
               <h5 className="title">
-                <b>ALL PRODUCT</b>
+                <b>Tất cả sản phẩm</b>
               </h5>
             </div>
           </Grid>

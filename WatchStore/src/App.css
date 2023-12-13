@@ -89,16 +89,16 @@
 }
 
 .BreadCrumb:hover {
-  color: #ff5722;
+  color: #cf2e2e;
   font-weight: bold;
 }
 
 /* BTN-LOGIN */
 .btn-login {
-  background: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  background: linear-gradient(315deg, #d5c8c5 0%, #cf2e2e 74%);
   color: #fff;
   border-radius: 28px;
-  animation: button-animation 1.1s ease-in-out infinite;
+
 }
 @keyframes button-animation {
   0% {
@@ -112,9 +112,6 @@
   }
 }
 
-.btn-login:hover {
-  color: rgb(29, 202, 144);
-}
 
 .text-nav:hover {
   /* opacity:0.5 */

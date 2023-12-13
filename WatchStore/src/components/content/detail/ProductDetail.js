@@ -173,7 +173,7 @@ function ProductDetail() {
 
               <Grid item xs={12} lg={9} sm={4} md={9} mt={1}>
                 <Button variant="contained" color="warning" onClick={btnAddCart}>
-                  <b>Add to cart</b>
+                  <b>Thêm vào giỏ hàng</b>
                 </Button>
               </Grid>
             </Grid>
@@ -197,7 +197,7 @@ function ProductDetail() {
       <Grid container mt={8} className="p-3" style={{ borderRadius: "14px", backgroundColor: "#f4f5fb" }}>
         <Grid item xs={12}>
           <Typography variant="h5">
-            <b>Description</b>
+            <b>Mô tả</b>
           </Typography>
         </Grid>
 
